@@ -3,5 +3,72 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    border: 0.5px dotted red;
 }
 
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --primary-contrast-color: ;
+    --secondary-contrast-color: ;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    margin-bottom: 5rem;
+    padding: 2rem 0 0 0;
+    justify-content: space-between;
+}
+
+h1 {
+
+}
+
+header nav ul {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: space-around;
+    gap: 2rem;
+    /* padding: 1rem; */
+
+}
+
+p {
+    display: inline;
+}
+
+#about-me {
+    display: flex;
+    gap: 2rem;
+}
+
+#about-me h2{
+    width: 100%;
+}
+
+#about-me img {
+    height: 30rem;
+    border-radius: 20px;
+}
+
+#portfolio {
+display: flex;
+flex-wrap: wrap;
+}
+
+#portfolio h2 {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#container-output {
+    /* display: inline; */
+    height: 10rem;
+    width: 20rem;
+}
