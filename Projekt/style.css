@@ -1,0 +1,28 @@
+#canvas1 {
+    /*Skapar border för canvas*/
+    border: 5px solid black;
+    /*Möjliggör positionering av canvas*/
+    position: absolute;
+    /*Positionerar canvas*/
+    top: 50%;
+    /*Positionerar canvas*/
+    left: 50%;
+    /* Positionerar canvas*/
+    translate: -50% -50%;
+    /* Bakgrund  */
+    background: url('images/backdrop1.jpg');
+    /* Klämmer in hela bakgrundsbilden */
+    background-size: cover;
+    /* Centrerar bakgrundsbilden'§ */
+    background-position: center;
+}
+
+#playerImage {
+    /* Döljer bilden som annars syns utanför canvas. Ritas ut med JS */
+    display: none;
+}
+
+#enemyImage {
+    /* Döljer bilden som annars syns utanför canvas. Ritas ut med JS */
+    display: none;
+}
