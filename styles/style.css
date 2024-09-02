@@ -112,12 +112,14 @@ body {
 }
 
 .nav-link {
+    /* min-width: 10ch; */
     color: var(--primary-contrast-color);
     font-family: var(--font-family-heading);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
     letter-spacing: var(--font-letter-spacing-medium);
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -177,6 +179,9 @@ body {
 }
 
 .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--secondary-contrast-color);
     padding: 1rem;
     border-radius: 10px;
@@ -227,10 +232,17 @@ body {
     border: 1px solid var(--button-color);
     height: 10rem;
     width: 100%;
+    max-width: 23ch;
+}
+
+.portfolio-paragraph {
+    color: var(--primary-contrast-color);
+    position: relative;
+    top: 0.1em;
 }
 
 .portfolio-image {
-    height: 11rem;
+    height: 10rem;
     width: 100%;
     border-radius: 10px;
     /* object-fit: cover; */
@@ -324,7 +336,9 @@ body {
     }
 
     .site-title {
-        font-size: var(--font-size-medium);
+        font-size: 2rem;
+        line-height: 10rem;
+        text-align: center;
     }
 
     .section-title {
@@ -357,7 +371,7 @@ body {
     }
 
     .site-title {
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-medium);
     }
 
     .nav-link {
@@ -368,6 +382,11 @@ body {
         font-size: var(--font-size-medium);
     }
 
+    .about-section, 
+    .portfolio-section,
+    .skills-section  {
+        margin-bottom: 2rem;
+    }
 
 }
 
