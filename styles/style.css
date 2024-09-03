@@ -1,10 +1,11 @@
 /* Imports */
- @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Abel&family=New+Amsterdam&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&family=New+Amsterdam&display=swap');
- /* General Reset */
-*, 
-*::before, 
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&family=New+Amsterdam&display=swap');
+
+/* General Reset */
+*,
+*::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +27,7 @@
 
 :root {
     /* Color Variables  */
-    --primary-color: #798777 ;
+    --primary-color: #798777;
     --secondary-color: #F8EDE3;
     --primary-contrast-color: #F8EDE3;
     --secondary-contrast-color: #798777;
@@ -34,7 +35,7 @@
     --button-color: #596358;
     --font-color: #596358;
     --link-color: #596358;
-    
+
     /* Font Variables  */
     --font-family-base: "Dosis";
     --font-family-heading: 'Abel';
@@ -98,7 +99,7 @@ body {
     font-size: var(--font-size-title);
     letter-spacing: var(--font-letter-spacing-heading);
     color: var(--primary-contrast-color);
-    
+
 }
 
 .main-nav {
@@ -278,6 +279,11 @@ body {
 
 }
 
+.edjucation-section {
+    margin-bottom: var(--margin-bottom-large);
+
+}
+
 .contact-section {
     margin-bottom: var(--section-gap);
 }
@@ -382,11 +388,10 @@ body {
         font-size: var(--font-size-medium);
     }
 
-    .about-section, 
+    .about-section,
     .portfolio-section,
-    .skills-section  {
+    .skills-section {
         margin-bottom: 2rem;
     }
 
 }
-
