@@ -369,7 +369,7 @@ body {
 
     .about-image {
         height: 15rem;
-        width: 100%;
+        width: 80%;
     }
 
     .container {
@@ -394,9 +394,14 @@ body {
         margin-bottom: 2rem;
     }
 
-    /* .portfolio-image {
+    .portfolio-item {
+        width: 80%;
+    }
+
+    .portfolio-image {
         height: 10rem;
         width: 80%;
-    } */
+        /* margin: 1rem auto; */
+    }
 
 }
