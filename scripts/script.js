@@ -9,3 +9,15 @@ randomMessageButton.addEventListener("click", function () {
 catAttackButton.addEventListener("click", function () {
    window.open("./Projekt/cat_attack.html", "Cat Attack", "width=device-width, resizable=yes");
 });
+
+$(".click-text-about").click(function () {
+   $(".toggle-text-about").toggle();
+});
+
+$(".click-text-portfolio-1").click(function () {
+   $(".toggle-text-portfolio-1").toggle();
+});
+
+$(".click-text-portfolio-2").click(function () {
+   $(".toggle-text-portfolio-2").toggle();
+});
