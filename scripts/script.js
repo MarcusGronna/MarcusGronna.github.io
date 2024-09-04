@@ -16,8 +16,10 @@ $(".click-text-about").click(function () {
 
 $(".click-text-portfolio-1").click(function () {
    $(".toggle-text-portfolio-1").toggle();
+   $(".toggle-text-portfolio-2").hide();
 });
 
 $(".click-text-portfolio-2").click(function () {
    $(".toggle-text-portfolio-2").toggle();
+   $(".toggle-text-portfolio-1").hide();
 });
