@@ -431,4 +431,11 @@ body {
         /* margin: 1rem auto; */
     }
 
+    .small-screen {
+        display: none;
+    }
+
+    .large-screen {
+
+    }
 }
