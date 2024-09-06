@@ -1,178 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Welcome to Marcus Grönnå's portfolio page. Explore my skills, projects, and experiences in web development and full-stack technologies."
+      />
+      <title>Marcus Portfolio Page</title>
+      <link rel="stylesheet" href="styles/style.css" />
+      <script src="scripts/script.js" defer></script>
+      <script src="scripts/message_randomizer.js" defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   </head>
 
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta name="description"
-      content="Welcome to Marcus Grönnå's portfolio page. Explore my skills, projects, and experiences in web development and full-stack technologies." />
-   <title>Marcus Portfolio Page</title>
-   <link rel="stylesheet" href="styles/style.css" />
-   <script src="scripts/script.js" defer></script>
-   <script src="scripts/message_randomizer.js" defer></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <body>
+      <div class="wrapper">
+         <header class="site-header">
+            <div class="container header-container">
+               <h1 class="site-title">Marcus Grönnå</h1>
+               <nav class="main-nav" aria-label="Main Navigation">
+                  <ul class="nav-list">
+                     <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                     <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                     <li class="nav-item"><a href="#edjucation" class="nav-link">Edjucation</a></li>
+                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </header>
 
-</head>
-
-<body>
-   <div class="wrapper">
-      <header class="site-header">
-         <div class="container header-container">
-            <h1 class="site-title">Marcus Grönnå</h1>
-            <nav class="main-nav" aria-label="Main Navigation">
-               <ul class="nav-list">
-                  <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                  <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                  <li class="nav-item"><a href="#edjucation" class="nav-link">Edjucation</a></li>
-                  <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-               </ul>
-            </nav>
-         </div>
-      </header>
-
-      <main>
-         <section class="about-section" id="about">
-            <div class="container">
-               <h2 class="section-title">About Me</h2>
-               <div class="about-content">
-                  <div class="about-text">
-                     <p> Hey there! I'm a passionate IT enthusiast from Stockholm, Sweden, with a love for web
-                        development and full-stack technologies. I'm driven by curiosity and a genuine excitement for
-                        learning new things every day. </p>
-                     <p class="click-text-about  pointer"><strong>Read more</strong></p>
-                     <div class="toggle-text-about">
-                        <p> I thrive on challenges, whether it’s solving complex coding problems, pushing my limits in
-                           strength training, running, or practicing Brazilian Jiu-Jitsu. I approach life with a blend
-                           of
-                           discipline, creativity, and a strong commitment to continuous personal growth. </p>
-                        <p> Social by nature, I value meaningful connections and enjoy engaging with others. I believe
-                           that
-                           collaboration and sharing knowledge are key to both personal and collective success. I’m also
-                           passionate about personal development—not just for myself but in helping others grow and
-                           reach
-                           their full potential as well. </p>
-                        <p> With a humble attitude and an open mind, I’m always excited about the future of technology
-                           and
-                           the possibilities it brings. I’m particularly interested in merging my knowledge of sports
-                           science and IT to create innovative, impactful solutions. Let’s connect and explore how we
-                           can
-                           collaborate and make a difference together! </p>
+         <main>
+            <section class="about-section" id="about">
+               <div class="container">
+                  <h2 class="section-title">About Me</h2>
+                  <div class="about-content">
+                     <div class="about-text">
+                        <p>
+                           Hey there! I'm a passionate IT enthusiast from Stockholm, Sweden, with a love for
+                           web development and full-stack technologies. I'm driven by curiosity and a genuine
+                           excitement for learning new things every day.
+                        </p>
+                        <p class="click-text-about pointer"><strong>Read more</strong></p>
+                        <div class="toggle-text-about">
+                           <p>
+                              I thrive on challenges, whether it’s solving complex coding problems, pushing my
+                              limits in strength training, running, or practicing Brazilian Jiu-Jitsu. I
+                              approach life with a blend of discipline, creativity, and a strong commitment to
+                              continuous personal growth.
+                           </p>
+                           <p>
+                              Social by nature, I value meaningful connections and enjoy engaging with others.
+                              I believe that collaboration and sharing knowledge are key to both personal and
+                              collective success. I’m also passionate about personal development—not just for
+                              myself but in helping others grow and reach their full potential as well.
+                           </p>
+                           <p>
+                              With a humble attitude and an open mind, I’m always excited about the future of
+                              technology and the possibilities it brings. I’m particularly interested in
+                              merging my knowledge of sports science and IT to create innovative, impactful
+                              solutions. Let’s connect and explore how we can collaborate and make a
+                              difference together!
+                           </p>
+                        </div>
                      </div>
+
+                     <img src="images/portrait.webp" alt="Photo of Marcus Grönnå" class="about-image" />
                   </div>
-
-                  <img src="images/portrait.webp" alt="Photo of Marcus Grönnå" class="about-image" />
                </div>
-            </div>
-         </section>
+            </section>
 
-         <section class="portfolio-section" id="portfolio">
-            <div class="container">
-               <h2 class="section-title">Portfolio</h2>
-               <ul class="portfolio-list">
-                  <li class="portfolio-item">
-                     <h3 class="portfolio-title">Message Randomizer</h3>
-                     <button id="message-button" class="button">Generate Message</button>
-                     <div id="message-output-container" class="output-container">
-                        <p id="message-output">Crafts an inspiring message.</p>
+            <section class="portfolio-section" id="portfolio">
+               <div class="container">
+                  <h2 class="section-title">Portfolio</h2>
+                  <ul class="portfolio-list">
+                     <li class="portfolio-item">
+                        <h3 class="portfolio-title">Message Randomizer</h3>
+                        <button id="message-button" class="button">Generate Message</button>
+                        <div id="message-output-container" class="output-container">
+                           <p id="message-output">Crafts an inspiring message.</p>
+                        </div>
+                        <p class="click-text-portfolio-1 pointer"><strong>Read more</strong></p>
+                        <p class="portfolio-paragraph">Finished july 2024.</p>
+                     </li>
+                     <div class="toggle-text-portfolio-1 small-screen">
+                        <p>
+                           To develop this program, I utilized my knowledge of JavaScript fundamentals and
+                           array manipulation. I structured the code to use arrays for storing different parts
+                           of the message, ensuring modularity and flexibility. Understanding randomization in
+                           JavaScript allowed me to create a function that selects random elements from each
+                           array, ensuring the generation of unique messages each time the function is
+                           executed. Additionally, my familiarity with string concatenation enabled me to
+                           efficiently combine these elements into coherent, motivational phrases. This
+                           project also demonstrates my ability to implement logical workflows, breaking down
+                           the task into manageable components that work together to produce the desired
+                           outcome.
+                        </p>
                      </div>
-                     <p class="click-text-portfolio-1 pointer"><strong>Read more</strong></p>
-                     <p class="portfolio-paragraph">Finished july 2024.</p>
-                  </li>
-                  <li class="portfolio-item">
-                     <h3 class="portfolio-title">Cat Attack Game</h3>
-                     <button class="button" id="cat-attack-button">Play</button>
-                     <div class="">
-                        <img src="images/cat-attack.webp" alt="Image of the game Cat Attack" class="portfolio-image" />
-                     </div>
-                     <p class="click-text-portfolio-2 pointer"><strong>Read more</strong></p>
-                     <p class="toggle-text-portfolio-2"></p>
-                     <p class="portfolio-paragraph">Released in january 2024.</p>
-                  </li>
-                  <!-- Additional portfolio items can be added here -->
-               </ul>
-               <div class="toggle-text-portfolio-1">
-                  <p>To develop this program, I utilized my knowledge of JavaScript
-                     fundamentals and array manipulation. I structured the code to use arrays for storing different
-                     parts of the message, ensuring modularity and flexibility. Understanding randomization in
-                     JavaScript allowed me to create a function that selects random elements from each array,
-                     ensuring the generation of unique messages each time the function is executed. Additionally, my
-                     familiarity with string concatenation enabled me to efficiently combine these elements into
-                     coherent, motivational phrases. This project also demonstrates my ability to implement logical
-                     workflows, breaking down the task into manageable components that work together to produce the
-                     desired outcome.</p>
+                     <li class="portfolio-item">
+                        <h3 class="portfolio-title">Cat Attack Game</h3>
+                        <button class="button" id="cat-attack-button">Play</button>
+                        <div class="">
+                           <img
+                              src="images/cat-attack.webp"
+                              alt="Image of the game Cat Attack"
+                              class="portfolio-image"
+                           />
+                        </div>
+                        <p class="click-text-portfolio-2 pointer"><strong>Read more</strong></p>
+                        <p class="toggle-text-portfolio-2"></p>
+                        <p class="portfolio-paragraph">Released in january 2024.</p>
+                     </li>
+                     <!-- Additional portfolio items can be added here -->
+                  </ul>
+                  <div class="toggle-text-portfolio-1 normal-screen">
+                     <p>
+                        To develop this program, I utilized my knowledge of JavaScript fundamentals and array
+                        manipulation. I structured the code to use arrays for storing different parts of the
+                        message, ensuring modularity and flexibility. Understanding randomization in
+                        JavaScript allowed me to create a function that selects random elements from each
+                        array, ensuring the generation of unique messages each time the function is executed.
+                        Additionally, my familiarity with string concatenation enabled me to efficiently
+                        combine these elements into coherent, motivational phrases. This project also
+                        demonstrates my ability to implement logical workflows, breaking down the task into
+                        manageable components that work together to produce the desired outcome.
+                     </p>
+                  </div>
+                  <div class="toggle-text-portfolio-2">
+                     <p>
+                        This project is a web-based game where the player uses arrow keys to dodge falling
+                        obstacles. The game increases in difficulty over time as obstacles appear more
+                        frequently, and the player's score rises with each passing moment. If the player
+                        collides with an obstacle, they lose a life, and the game ends when all lives are
+                        lost. The player can restart the game by pressing "R" after a game over. What I
+                        Learned Through this project, I enhanced my understanding of object-oriented
+                        programming in JavaScript, particularly in organizing code using classes. I also
+                        learned how to handle keyboard events for smooth player movement and implemented
+                        collision detection to manage interactions between the player and obstacles. Working
+                        with the HTML5 Canvas API helped me gain practical experience in 2D game rendering and
+                        animation.
+                     </p>
+                  </div>
                </div>
-               <div class="toggle-text-portfolio-2">
+            </section>
 
-                  <p>This project is a web-based game where the player uses arrow keys to
-                     dodge falling obstacles. The game increases in difficulty over time as obstacles appear more
-                     frequently, and the player's score rises with each passing moment. If the player collides with an
-                     obstacle, they lose a life, and the game ends when all lives are lost. The player can restart the
-                     game
-                     by pressing "R" after a game over.
-
-                     What I Learned
-                     Through this project, I enhanced my understanding of object-oriented programming in JavaScript,
-                     particularly in organizing code using classes. I also learned how to handle keyboard events for
-                     smooth
-                     player movement and implemented collision detection to manage interactions between the player and
-                     obstacles. Working with the HTML5 Canvas API helped me gain practical experience in 2D game
-                     rendering
-                     and animation.</p>
+            <section class="skills-section" id="skills">
+               <div class="container">
+                  <h2 class="section-title">Skills</h2>
+                  <ul class="skills-list">
+                     <li class="skill-item">JavaScript</li>
+                     <li class="skill-item">HTML</li>
+                     <li class="skill-item">CSS</li>
+                     <li class="skill-item">Visual Design</li>
+                     <li class="skill-item">Degree in Sports Science</li>
+                  </ul>
                </div>
-            </div>
-         </section>
+            </section>
 
-         <section class="skills-section" id="skills">
+            <section class="edjucation-section" id="edjucation">
+               <div class="container">
+                  <h2 class="section-title">Edjucation and Experience</h2>
+                  <p>
+                     Currently, I’m expanding my skills at Högskolan Väst, where I specialize in HTML, CSS,
+                     JavaScript, database systems, and design, including UI/UX. I’m also furthering my
+                     knowledge as a full-stack developer at Företagsuniversitetet.
+                  </p>
+                  <p>
+                     Also, I earned my Bachelor’s degree in Sports Science from Gymnastik- och
+                     Idrottshögskolan, blending my interests in sports and human performance. I've been
+                     working as a train driver since 2011, with experience across various companies including
+                     freight, SJ, MTR, and Stockholm’s commuter trains. More recently, I’ve combined my love
+                     for fitness and helping others by becoming a personal trainer.
+                  </p>
+               </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+               <div class="container">
+                  <h2 class="section-title">Contact</h2>
+                  <ul class="contact-list">
+                     <li class="contact-item"><strong>Mobile:</strong></li>
+                     <li class="contact-item"><strong>Email:</strong></li>
+                     <li class="contact-item"><a href="#" class="contact-link">GitHub</a></li>
+                     <li class="contact-item"><a href="#" class="contact-link">LinkedIn</a></li>
+                     <li class="contact-item"><a href="#" class="contact-link">Instagram</a></li>
+                  </ul>
+               </div>
+            </section>
+         </main>
+
+         <footer class="site-footer">
             <div class="container">
-               <h2 class="section-title">Skills</h2>
-               <ul class="skills-list">
-                  <li class="skill-item">JavaScript</li>
-                  <li class="skill-item">HTML</li>
-                  <li class="skill-item">CSS</li>
-                  <li class="skill-item">Visual Design</li>
-                  <li class="skill-item">Degree in Sports Science</li>
-               </ul>
+               <p>&copy; 2024 Marcus Grönnå. All Rights Reserved.</p>
             </div>
-         </section>
-
-         <section class="edjucation-section" id="edjucation">
-            <div class="container">
-               <h2 class="section-title">Edjucation and Experience</h2>
-               <p> Currently, I’m expanding my skills at
-                  Högskolan Väst, where I specialize in HTML, CSS, JavaScript, database systems, and
-                  design, including UI/UX. I’m also furthering my knowledge as a full-stack developer
-                  at Företagsuniversitetet.
-               </p>
-               <p>
-                  Also, I earned my Bachelor’s degree in Sports Science from Gymnastik- och
-                  Idrottshögskolan, blending my interests in sports and human performance. I've been
-                  working as a train driver since 2011, with experience across various companies
-                  including freight, SJ, MTR, and Stockholm’s commuter trains. More recently, I’ve
-                  combined my love for fitness and helping others by becoming a personal trainer.
-               </p>
-            </div>
-         </section>
-
-         <section class="contact-section" id="contact">
-            <div class="container">
-               <h2 class="section-title">Contact</h2>
-               <ul class="contact-list">
-                  <li class="contact-item"><strong>Mobile:</strong></li>
-                  <li class="contact-item"><strong>Email:</strong></li>
-                  <li class="contact-item"><a href="#" class="contact-link">GitHub</a></li>
-                  <li class="contact-item"><a href="#" class="contact-link">LinkedIn</a></li>
-                  <li class="contact-item"><a href="#" class="contact-link">Instagram</a></li>
-               </ul>
-            </div>
-         </section>
-      </main>
-
-      <footer class="site-footer">
-         <div class="container">
-            <p>&copy; 2024 Marcus Grönnå. All Rights Reserved.</p>
-         </div>
-      </footer>
-   </div>
-</body>
-
+         </footer>
+      </div>
+   </body>
 </html>
