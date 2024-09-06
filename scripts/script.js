@@ -29,11 +29,11 @@ $(".click-text-portfolio-1").click(function () {
          $(".toggle-text-portfolio-1").fadeOut(300);
       }
    } else {
-      if ($(".toggle-text-portfolio-1").css("display") === "none") {
-         $(".toggle-text-portfolio-1").fadeIn(300).css("display", "block");
+      if ($(".toggle-text-portfolio-1.normal-screen").css("display") === "none") {
+         $(".toggle-text-portfolio-1.normal-screen").fadeIn(300).css("display", "block");
          $(".toggle-text-portfolio-2").hide();
       } else {
-         $(".toggle-text-portfolio-1").fadeOut(300);
+         $(".toggle-text-portfolio-1.normal-screen").fadeOut(300);
       }
    }
    // $(".toggle-text-portfolio-1").toggle();
