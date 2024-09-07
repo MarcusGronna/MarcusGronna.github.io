@@ -19,8 +19,10 @@ $(".click-text-about").click(function () {
 });
 
 $(".click-text-portfolio-1").click(function () {
-   let isMobile = window.matchMedia("(max-width: 480px)").matches; //Next to do!
+   // Variable to compare screen size
+   let isMobile = window.matchMedia("(max-width: 480px)").matches;
 
+   // Check screen size to choose which paragraph to display
    if (isMobile) {
       if ($(".toggle-text-portfolio-1.small-screen").css("display") === "none") {
          $(".toggle-text-portfolio-1.small-screen").fadeIn(300).css("display", "block");
@@ -40,6 +42,12 @@ $(".click-text-portfolio-1").click(function () {
 });
 
 $(".click-text-portfolio-2").click(function () {
-   $(".toggle-text-portfolio-2").toggle();
-   $(".toggle-text-portfolio-1").hide();
+   // $(".toggle-text-portfolio-2").toggle();
+   // $(".toggle-text-portfolio-1").hide();
+   if ($(".toggle-text-portfolio-2").css("display") === "none") {
+      $(".toggle-text-portfolio-2").fadeIn(300).css("display", "block");
+      $(".toggle-text-portfolio-1").hide();
+   } else {
+      $(".toggle-text-portfolio-2").fadeOut(300);
+   }
 });
