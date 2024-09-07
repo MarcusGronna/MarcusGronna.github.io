@@ -165,9 +165,9 @@ body {
 
 
 
-.toggle-text-about {
+/* .toggle-text-about {
     display: none;
-}
+} */
 
 .about-image {
     height: 30rem;
@@ -306,7 +306,7 @@ body {
 
 }
 
-.edjucation-section {
+.education-section {
     margin-bottom: var(--margin-bottom-large);
 
 }
@@ -325,6 +325,15 @@ body {
     font-size: var(--font-size-medium);
     color: var(--font-color);
 }
+
+.contact-item span {
+    font-weight: var(--font-weight-bold);
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
 
 .contact-link {
     color: var(--link-color);
@@ -435,5 +444,5 @@ body {
         display: none;
     }
 
-  
+
 }
