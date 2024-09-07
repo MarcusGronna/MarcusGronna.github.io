@@ -312,6 +312,10 @@ body {
 
 }
 
+.education-section p {
+    max-width: 90ch;
+}
+
 .contact-section {
     margin-bottom: var(--section-gap);
 }
